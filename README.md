@@ -1,16 +1,17 @@
-# Multiplos de 3 y 5
+# Múltiplos de 3 y 5
 
 ## Desafío Desarrollador Backend
 
 
 ## Descripción
 
-Programa que imprime todos los números del 1 al 100.
-Múltiplos de 3, en lugar de que muestre el número, que imprima "Música". 
+Programa que imprime múltiplos de 3 y 5.
 
-Para los múltiplos de 5 imprimir "TI". 
+Para múltiplos de 3, imprime "Música".
 
-Para los números que son múltiplos de 3 y 5, imprimir "Musical".
+Para múltiplos de 5 imprime "TI".
+
+Los múltiplos de ambos, imprime "Musical".
 
 ### Nota:
 El truco es: solo se puede usar solo un `if`. No hay múltiples ramas, ternario
@@ -23,7 +24,7 @@ operadores o `else`.
 * Aplicar su conocimiento SOLID.
 
 ### Nota Personal:
-* Escribi el desafío NodeJS, Javascript y TypeScript.
+* Escribi el desafío en NodeJS, Javascript y TypeScript.
 
 ## Ejecución
 
