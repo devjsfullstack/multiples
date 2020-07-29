@@ -1,0 +1,41 @@
+{
+  "name": "multiples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "delete": "ts-node ./tools/delete.ts",
+    "copy": "ts-node ./tools/copy.ts",
+    "tsc": "tsc",
+    "parcel": "parcel build src/public/js/index.ts -d dist/public/js",
+    "build": "npm-run-all delete tsc copy parcel",
+    "dev:start": "npm-run-all build start",
+    "dev": "nodemon --watch src --watch server.ts -e ts,js,html,css --exec npm run dev:start",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.26",
+    "@types/shelljs": "^0.8.8",
+    "@types/swig": "0.0.29",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "shelljs": "^0.8.4",
+    "ts-node": "^8.10.2",
+    "tsc-node": "0.0.3",
+    "typescript": "^3.9.7"
+  }
+}
